@@ -1,0 +1,12 @@
+<div class="cardContainer">
+  <mat-card *ngIf="employee" [ngClass]="" class="card">
+    <img class="image" src="../../../assets/avtar.png" mat-card-image />
+    <mat-card-content class="content">
+      <p class="name">Name: {{ employee.employee_name | uppercase }}</p>
+      <p class="salary">
+        Salary : {{ employee.employee_salary | currency: "USD" }}
+      </p>
+      <p class="age">Age : {{ employee.employee_age }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
