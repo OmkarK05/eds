@@ -18,6 +18,9 @@ export class EmployeesComponent implements OnInit {
       this.data = { data };
       this.employees = this.data.data.data;
       console.log(this.employees);
+    },(err) => {
+      console.log(err);
+      alert(err);
     });
   }
 

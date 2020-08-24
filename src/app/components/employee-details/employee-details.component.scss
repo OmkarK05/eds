@@ -19,8 +19,11 @@
 
   .image {
     flex-basis: 30%;
-    height: auto;
-    padding-top: 10px 0;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    margin : 0 auto;
+
   }
   .content {
     flex-basis: 60%;
@@ -29,7 +32,10 @@
     font-size: 24px;
   }
 }
-
+.card:hover{
+  background-color: rgb(235, 237, 238);
+  box-shadow: 0 0 8px rgb(213, 212, 212);
+}
 .salary {
   padding: 15px 5px;
 }
@@ -38,4 +44,6 @@
 }
 .name {
   padding: 15px 5px;
+  cursor: pointer;
 }
+

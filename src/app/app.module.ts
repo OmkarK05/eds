@@ -22,6 +22,7 @@ import { AuthService } from './services/auth.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { GetEmployeesService } from './services/get-employees.service';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { GetEmployeesService } from './services/get-employees.service';
     LoginComponent,
     EmployeesComponent,
     EmployeeDetailsComponent,
+    AgePipe,
   ],
   imports: [
     BrowserModule,
